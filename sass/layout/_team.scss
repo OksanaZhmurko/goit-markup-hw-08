@@ -27,10 +27,6 @@
     letter-spacing: 0.03em;
     color: #212121;
   }
-  
-  & :last-child {
-    margin-bottom: 0;
-  }
 }
   
   .team-list {
@@ -48,7 +44,7 @@
   &__item {
      margin-bottom: 30px;
      @media screen and (min-width: 768px) {
-      width: calc (100px / 2 - 30px);
+      width: calc(100% / 2 - 30px);
       margin-left: 30px;
      }
    }
@@ -91,9 +87,9 @@
         background: #ffffff;
       }
       
-  //    &:last-child {
-  //   margin-bottom: 0;
-  // }
+  &:last-child {
+  margin-bottom: 0;
+  }
 }
   
 .soc-list {

@@ -1,0 +1,50 @@
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+.header-list,
+.about-list,
+.work-list,
+.clients-list,
+.footersoc-list,
+.team-list,
+.team-soc-list,
+.address-list,
+.section-list,
+.project-list,
+.section__title,
+.section__text,
+.project-list {
+  list-style: none;
+}
+
+.header__logo,
+.header-list__link,
+.team-soc-link,
+.clients-link,
+.footer-address__logo,
+.header-list__mail,
+.header-list__tel,
+.address-mail,
+.address-tel,
+.work-link,
+.section__title,
+.section__text,
+.project-list,
+.project-list__link{
+text-decoration: none;
+}

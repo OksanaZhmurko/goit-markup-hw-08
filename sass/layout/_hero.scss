@@ -1,9 +1,27 @@
 
 .hero {
-    content: "";
-    background-color: #2f303a;
-    max-width: 1600px;
-    max-height: 600px;
+  content: "";
+  background-color: #2f303a;
+  @include mobile {
+    width: 480px; 
+    max-width: 100%;
+    max-height: auto;
+    margin: 0 auto;
+  }
+  @include tablet {
+    width: 768px;
+    max-width: 100%;
+    max-height: auto;
+    margin: 0 auto;
+  }
+  @include desktop {
+    width: 1200px;
+    max-width: 100%;
+    max-height: auto;
+    margin: 0 auto;
+  } 
+    max-width: 100%;
+    max-height: auto;
     margin: 0 auto;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -14,28 +32,77 @@
     background-position: center;
     background-size: cover;
     padding-top: 200px;
-    padding-bottom: 200px;
-  
-   & {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-color: #2f303a;
-   }
+    padding-bottom: 200px;  
+ }
+
+ .hero {
+   /*  padding-top: 200px;
+    padding-bottom: 200px; */
+    background-color: #2f303a; 
+
    &__title {
-      display: block;
+    @include mobile {
+    width: 480px;
+    margin-top: 0;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;  
+    color: #ffffff;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    }
+
+    @include tablet {
+      width: 768px;
+      margin-top: 0;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+     align-items: center;
+     margin: 0 auto;
+     margin-bottom: 30px;
+    } 
+
+    @include desktop {
+      width: 1200px;
+      margin-top: 0;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
+    } 
+     /*  display: block; */
       margin: 0 auto;
       margin-bottom: 30px;
-      max-width: 696px;
+      
+    /*   max-width: 696px; */
     
-      font-weight: 900;
+   /*    font-weight: 900;
       text-align: center;
       font-size: 44px;
       line-height: 1.36;
       letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: #ffffff;
+      text-transform: uppercase; */
+    /*   color: #ffffff;
+      align-items: center; */
     }
-    
+  
+
      &__btn {
       height: 50px;
       min-width: 200px;
@@ -56,7 +123,7 @@
       margin: 0 auto;
       display: block;
     } 
-  }
-  
+ }
+
 
   

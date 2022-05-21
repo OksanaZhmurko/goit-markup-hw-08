@@ -1,15 +1,50 @@
+
 .footer {
+  @include mobile {
+    width: 480px;
     display: block;
     padding: 60px 0;
     background: #2f303a;
   }
-  
+}
+
+
+.footer {
+  @include tablet {
+    width: 768px;
+    padding: 60px 0;
+    flex-wrap: wrap;
+    background: #2f303a;
+  }
+}
+
+
+.footer {
+  @include desktop {
+    width: 1200px;
+    display: block;
+    padding: 60px 0;
+    background: #2f303a;
+  }
+}
   .footer > .container {
+    @include tablet {
+    width: 768px;
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
+    }
   }
   
+  .footer-address {
+    @include tablet {
+      width: 768px;
+      align-items: center;
+    
+    }
+
   .footer-address__logo {
+    display: inline-block;
     margin-bottom: 20px;
     display: block;
     font-family: "Raleway";
@@ -22,6 +57,8 @@
   
   
 .footer-address__text {
+  @include tablet {
+    width: 768px;
   margin-bottom: 9px;
   font-family: "Roboto";
   font-style: normal;
@@ -31,8 +68,10 @@
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+}
   
   .logo__web {
+    display: inline-block;
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
@@ -43,6 +82,7 @@
   }
   
   .logo__studio {
+    display: inline-block;
      font-family: "Raleway";
      font-style: normal;
      font-weight: 700;
@@ -54,10 +94,19 @@
      color: #ffffff;
      }  
   }
-  
+}
+
+.address-list{
+  @include tablet {
+    width: 768px;
+    display: flex;
+  } 
+}
   
   .address-list__mail,
   .address-list__tel {
+    @include tablet {
+      width: 768px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -66,6 +115,7 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+}
   
   .address-list__item {
     margin-bottom: 9px;
@@ -75,11 +125,20 @@
     margin-bottom: 0;
   }
   
-  
   .footer-invite {
-    display: block;
-    margin-left: 70px;
-  &__text {
+    @include tablet {
+    width: 768px;
+    margin-right: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    }
+  }
+  
+  .footer-invite__text {
+    @include tablet {
+    width: 768px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -88,12 +147,18 @@
     margin-bottom: 20px;
     }
   }
+
   
   
   .footersoc-list {
-    display: flex;
-    justify-content: center;
+    @include tablet {
+      width: 768px;
+      display: flex;
+    }
   &__link {
+    @include tablet {
+      width: 768px;
+      display: flex;
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);
@@ -105,6 +170,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
      }
+    }
     &__icon {
      fill: #ffffff;
       }

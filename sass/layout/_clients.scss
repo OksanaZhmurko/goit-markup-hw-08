@@ -1,9 +1,30 @@
 
 .clients {
-padding-top: 94px;
-padding-bottom: 94px;
+  @include tablet {
+    width: 768px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  } 
+  @include mobile {
+    width: 480px;  
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include desktop {
+    width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+/* padding-top: 94px;
+padding-bottom: 94px; */
   &__title {
-margin-bottom: 50px;
+/* margin-bottom: 50px; */
+@include desktop {
+  width: 1200px;
+  margin-bottom: 50px;
+}
+margin-bottom: 30px;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
@@ -12,20 +33,27 @@ letter-spacing: 0.03em;
 color: #212121;
   }
 }
-  
 .clients-list {
-  justify-content: center;
-  align-items: center;
-}
-  
-.clients-list {
+@include mobile {
+  width: 480px;
   display: flex;
   flex-wrap: wrap;
-  &__item {
-  width: 170px;
-  height: 92px;
-   }
-  &__link {
+  align-items: center;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+&__item {
+@include mobile {
+width: 480px;  
+width: 100%;
+height: 92px;
+ }
+}
+
+&__link {
+  @include mobile {
+  width: 480px;
   display: flex;
   width: 100%;
   height: 100%;
@@ -39,6 +67,66 @@ color: #212121;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+}
+
+.clients-list__item {
+  @include mobile{
+    width: 768px;
+    display: flex;
+    width: calc(100% / 2 - 30px);
+  /* width: 170px; */
+  width: 210px;
+  height: 92px;
+  align-items: center;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+}
+.clients-list__item + .clients-list__item {
+  margin-left: 30px;
+  @include mobile {
+  width: 480px;
+  display: flex;
+  width: calc(100% / 2 - 30px);
+  }
+}
+
+
+.clients-list {
+  @include tablet {
+  width: 768px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  }
+  &__item {
+    @include tablet {
+      width: 768px;  
+  width: 100%;
+  height: 92px;
+   }
+  }
+  
+  &__link {
+  @include tablet {
+  width: 768px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #afb1b8;
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
   &__icon {
   width: 106px;
   height: 60px;
@@ -60,15 +148,98 @@ color: #212121;
      } 
   }
 
-  .clients-list__item{
-    width: 170px;
+  .clients-list__item {
+    @include tablet {
+      width: 768px;
+      display: flex;
+      width: calc(100% / 3 - 30px);
+    /* width: 170px; */
+    width: 226px;
     height: 92px;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: 30px;
   }
-  
+}
   .clients-list__item + .clients-list__item {
     margin-left: 30px;
+    @include tablet {
+      width: 768px;
+      display: flex;
+      width: calc(100% / 3 - 30px);
+    }
+}
+
+.clients-list {
+  @include desktop {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  }
+  &__item {
+  @include desktop {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  flex-wrap: wrap;
+   }
   }
   
+  &__link {
+  @include desktop {
+  width: 1200px;
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #afb1b8;
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+  &__icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+     }
+     &__link:hover,
+     .clients-list__link:focus {
+     border-color: #2196f3;
+     }
+     &__link:hover {
+     color: #2196f3;
+     }
+     &__link:focus {
+     color: #2196f3;
+     }
+     &__icon:hover,
+     &__icon:focus {
+     fill: #2196f3;
+     } 
+  }
+
+   .clients-list__item {
+    @include desktop {
+      width: 1200px;
+     width: 170px;
+    height: 92px;
+  flex-wrap: wrap;
+  display: flex;
+  } 
+}
+
+  .clients-list__item + .clients-list__item {
+    @include desktop {
+      width: 1200px;
+      margin-left: 30px;
+      display: flex;
+    }
+}
  
   
  

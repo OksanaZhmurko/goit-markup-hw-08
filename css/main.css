@@ -473,12 +473,20 @@ ol {
 .feauture__icon {
   width: 70px;
   height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+.about-list__item {
+  width: 100%;
+  margin-bottom: 30 px;
+}
 @media screen and (min-width: 768px) {
   .about-list__item {
     width: calc(50% - 30px);
     margin-left: 30px;
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {

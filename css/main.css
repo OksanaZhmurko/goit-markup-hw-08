@@ -340,11 +340,7 @@ ol {
   /*  padding-top: 200px;
    padding-bottom: 200px; */
   background-color: #2f303a;
-}
-.hero__title {
   /*  display: block; */
-  margin: 0 auto;
-  margin-bottom: 30px;
   /*   max-width: 696px; */
   /*    font-weight: 900;
      text-align: center;
@@ -355,58 +351,31 @@ ol {
   /*   color: #ffffff;
     align-items: center; */
 }
-@media screen and (min-width: 480px) {
-  .hero__title {
-    width: 480px;
-    margin-top: 0;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;
-    letter-spacing: 0.06em;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0 auto;
-    margin-bottom: 30px;
-  }
+.hero__title {
+  margin-top: 0;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .hero__title {
-    width: 768px;
-    margin-top: 0;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;
-    letter-spacing: 0.06em;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    width: 360px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 1200px;
-    margin-top: 0;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;
-    letter-spacing: 0.06em;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 .hero__btn {

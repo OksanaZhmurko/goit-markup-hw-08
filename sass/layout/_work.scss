@@ -1,12 +1,11 @@
 
 .work {
   
+  padding-top: 0;
   @include desktop {
-    width: 1200px;
-
-    padding-top: 0;
-    padding-bottom: 94px;
+  width: 1200px;
   }
+  
   &__title {
     margin-bottom: 50px;
     font-weight: 700;
@@ -20,10 +19,8 @@
   
   .work-list {
     
-    @include desktop {
-      width: 1200px;
-    display: flex;
-    }
+  display: flex;
+  
   &__item + &__item {
     margin-left: 30px;
   }

@@ -499,11 +499,12 @@ ol {
   margin-right: 0px;
 }
  */
+.work {
+  padding-top: 0;
+}
 @media screen and (min-width: 1200px) {
   .work {
     width: 1200px;
-    padding-top: 0;
-    padding-bottom: 94px;
   }
 }
 .work__title {
@@ -516,13 +517,10 @@ ol {
   color: #212121;
 }
 
-@media screen and (min-width: 1200px) {
-  .work-list {
-    width: 1200px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.work-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .work-list__item + .work-list__item {
   margin-left: 30px;

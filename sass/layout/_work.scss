@@ -1,9 +1,14 @@
 
+
+
+
 .work {
+display: none;
   
-  padding-top: 0;
+  
   @include desktop {
   width: 1200px;
+  display: flex;
   }
   
   &__title {
@@ -18,8 +23,11 @@
 }
   
   .work-list {
-    
-  display: flex;
+    @include desktop {
+      width: 1200px;
+      display: flex;
+    }
+ 
   
   &__item + &__item {
     margin-left: 30px;

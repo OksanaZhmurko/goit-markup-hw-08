@@ -62,14 +62,14 @@
   </header>
   <main>  -->
     <!--Section 1-->
-   <!--  <section class="hero">
+   <!-- <section class="hero">
       <div class="container">
         <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
         <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
       </div>
-    </section> --> 
+    </section>  -->
     <!--Section 2-->
-<!--    <section class="about">
+<!--  <section class="about">
       <div class="container">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="about-list">
@@ -127,10 +127,10 @@
           </li>
         </ul>
       </div>
-    </section>  -->
-    <!--Section 3-->
- <!-- <section class="work">
-      <div class="container">
+    </section>   -->
+ <!--Section 3-->
+<!-- <section class="work"> -->
+<!--       <div class="container">
         <h2 class="work__title">Чем мы занимаемся</h2>
         <ul class="work-list">
           <li class="work-list__item">
@@ -153,14 +153,33 @@
           </li>
         </ul>
       </div>
-    </section>  -->
+    </section> -->
     <!--Section 4-->
-  <!--  <section class="team">
+<section class="team">
       <div class="container">
         <h2 class="team__title">Наша команда</h2>
         <ul class="team-list">
           <li class="team-list__item">
-            <img src="./images/productdesigner.jpg" alt="Product Designer" width="270" height="260" class="team-list__img" />
+            <picture>
+              <source
+                srcset="./images/productdesigner.jpg 1x,
+                ./images/productdesigner-desktop-2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/productdesigner-tab.jpg 1x,
+                ./images/productdesigner-tab-2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/productdesigner-mob.jpg 1x,
+                ./images/productdesigner-mob-2x.jpg 2x"
+                media="(min-width: 320px)"
+              />
+              <img 
+            src="./images/productdesigner.jpg" alt="Product Designer"
+             class="team-list__img" />
+            </picture>
             <div class="team-member">
               <h3 class="team-member__name">Игорь Демьяненко</h3>
               <p class="team-member__pos">Product Designer</p>
@@ -196,8 +215,25 @@
               </ul>
             </div>
           <li class="team-list__item">
-            <img src="./images/frontenddeveloper.jpg" alt="Frontend developer" width="270" height="260"
+            <picture>
+              <source
+                srcset="./images/frontenddeveloper.jpg 1x,
+                ./images/frontenddeveloper-desktop-2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/frontenddeveloper-tab.jpg 1x,
+                ./images/frontenddeveloper-tab-2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/frontenddeveloper-mob.jpg 1x,
+                ./images/frontenddeveloper-mob-2x.jpg 2x"
+                media="(min-width: 320px)"
+              />
+              <img src="./images/frontenddeveloper.jpg" alt="Frontend developer"
               class="team-list__img" />
+            </picture>
             <div class="team-member">
               <h3 class="team-member__name">Ольга Репина</h3>
               <p class="team-member__pos">Frontend Developer</p>
@@ -233,7 +269,25 @@
               </ul>
             </div>
           <li class="team-list__item">
-            <img src="./images/marketing.jpg" alt="Marketing" width="270" height="260" class="team-list__img" />
+            <picture>
+              <source
+                srcset="./images/marketing.jpg 1x,
+                ./images/marketing-desktop-2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/marketing-tab.jpg 1x,
+                ./images/marketing-tab-2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/marketing-mob.jpg 1x,
+                ./images/marketing-mob-2x.jpg 2x"
+                media="(min-width: 320px)"
+              />
+              <img src="./images/marketing.jpg" alt="Marketing"
+               class="team-list__img" />
+            </picture>
             <div class="team-member">
               <h3 class="team-member__name">Николай Тарасов</h3>
               <p class="team-member__pos">Marketing</p>
@@ -269,7 +323,25 @@
               </ul>
             </div>
           <li class="team-list__item">
-            <img src="./images/uldesigner.jpg" alt="UI Designer" width="270" height="260" class="team-list__img" />
+            <picture>
+              <source
+                srcset="./images/uldesigner.jpg 1x,
+                ./images/uldesigner-desktop-2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/uldesigner-tab.jpg 1x,
+                ./images/uldesigner-tab-2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/uldesigner-mob.jpg 1x,
+                ./images/uldesigner-mob-2x.jpg 2x"
+                media="(min-width: 320px)"
+              />
+              <img src="./images/uldesigner.jpg" alt="UI Designer"
+               class="team-list__img" />
+            </picture>
             <div class="team-member">
               <h3 class="team-member__name">Михаил Ермаков</h3>
               <p class="team-member__pos">UI Designer</p>
@@ -306,9 +378,9 @@
             </div>
           </ul>
         </div>
-    </section> -->
-<!--     <--Clients-->
-  <!--  <section class="clients">
+    </section> 
+<!-- <--Clients--> 
+  <!-- <section class="clients">
       <div class="container">
         <h2 class="clients__title">Постоянные клиенты</h2>
         <ul class="clients-list">
@@ -357,9 +429,9 @@
         </ul>
       </div>
     </section>
-  </main> -->
+  </main>  -->
   <!--Footer-->
- <footer class="footer">
+<!--  <footer class="footer">
     <div class="container">
       <div class="flex-wrap-footer">
       <div class="footer-address">
@@ -414,7 +486,7 @@
         <button class="footer-form__submit" type="submit">Подписаться</button>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <div class="backdrop is-hidden" data-modal>
   <div class="modal">
       <button type="button" class="modal__button" data-modal-close>

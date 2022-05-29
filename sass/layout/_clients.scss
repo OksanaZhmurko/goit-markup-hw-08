@@ -1,7 +1,21 @@
 
 .clients {
- /*  padding-top: 94px;
-  padding-bottom: 94px; */
+  @include mobile {
+    width: 480px;  
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@include tablet {
+  width: 768px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+  @include desktop {
+    width: 1200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  }
     &__title {
   margin-bottom: 50px;
   font-weight: 700;

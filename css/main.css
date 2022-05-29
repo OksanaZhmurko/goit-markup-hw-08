@@ -1192,15 +1192,36 @@ ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+  margin-top: -15px;
+  margin-left: -8px;
+  /* justify-content: center;
   margin-bottom: 50px;
-  border: 0;
+  border: 0; */
+}
+@media screen and (min-width: 768px) {
+  .section-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 .section-list__item {
-  margin-right: 8px;
-  border: 0;
+  margin-top: 15px;
+  margin-left: 8px;
+  /* margin-right: 8px;
+  border: 0; */
 }
 .section-list__btn {
   padding: 6px 22px;
@@ -1237,8 +1258,12 @@ ol {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+}
+@media screen and (min-width: 768px) {
+  .project-list {
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 .project-list__link {
   display: block;
@@ -1299,7 +1324,10 @@ ol {
 }
 
 .project-list__item {
-  display: block;
+  /* display: block; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   cursor: pointer;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
@@ -1312,8 +1340,25 @@ ol {
 }
 
 .project-list__item {
-  width: calc 3.3333333333px;
-  margin-bottom: 30 px;
+  width: 100%;
+}
+.project-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .project-list__item {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .project-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-list__item {
+    width: calc(33.3333333333% - 30px);
+  }
 }
 
 .section {
